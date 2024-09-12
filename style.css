@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--Grey-900);
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.contenedor {
+  background: var(--Grey-800);
+  display: grid;
+  place-items: center;
+  padding: 35px 40px;
+  border-radius: 10px;
+}
+
+img {
+  border-radius: 50%;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: var(--White);
+  margin-bottom: 10px;
+}
+
+span {
+  color: var(--Green);
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+p {
+  color: var(--White);
+  margin-bottom: 30px;
+}
+
+.contenedor__enlaces {
+  display: grid;
+  grid-gap: 15px;
+}
+
+.contenedor__enlaces a {
+  color: var(--White);
+  background: var(--Grey-700);
+  font-weight: bold;
+  padding: 15px 100px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contenedor__enlaces a:hover {
+  color: var(--Grey-900);
+  background: var(--Green);
+}
+
+@media (max-width: 375px) {
+  .contenedor {
+    max-width: 336px;
+    padding: 35px 23px;
+  }
+
+  .contenedor__enlaces a {
+    font-size: 11px;
+  }
+}
